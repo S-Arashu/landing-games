@@ -3,18 +3,23 @@ import { createElement } from "../../helpers/createElement";
 import styles from "./header.module.css";
 
 export function Header() {
-  const container = createElement("div", {
-    parent: document.body,
-    style: ["container"],
-  });
-
   const header = createElement("header", {
-    parent: container,
+    parent: document.body,
     style: [styles.header],
   });
 
-  createElement("img", {
+  const container = createElement("div", {
     parent: header,
+    style: ["container"],
+  });
+
+  const headerWrapper = createElement("div", {
+    parent: container,
+    style: [styles.headerWrapper],
+  });
+
+  createElement("img", {
+    parent: headerWrapper,
     style: [styles.headerLogo],
     attr: {
       src: "/logo-games.png",
@@ -23,7 +28,7 @@ export function Header() {
   });
 
   const headerNav = createElement("nav", {
-    parent: header,
+    parent: headerWrapper,
     style: [styles.headerNav],
   });
 
@@ -46,7 +51,7 @@ export function Header() {
   });
 
   const burger = createElement("img", {
-    parent: header,
+    parent: headerWrapper,
     style: [styles.headerBurger],
     attr: {
       src: "/totoro-assistant.png",
@@ -71,9 +76,11 @@ export function Header() {
     burgerModal.append(btnLogIn);
     burgerModal.append(btnRegistration);
 
-    overlay.addEventListener("click", () => {
-      overlay.remove();
-      document.body.style.overflow = "";
+    overlay.addEventListener("click", (event) => {
+      if (event.target === event.currentTarget) {
+        overlay.remove();
+        document.body.style.overflow = "";
+      }
     });
   });
 
@@ -85,5 +92,5 @@ export function Header() {
     return;
   }
 
-  return container;
+  return header;
 }

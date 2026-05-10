@@ -1,0 +1,50 @@
+.featuresStrip {
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-mid);
+  padding: 32px 0;
+}
+
+.featuresWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.featureItem {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.featureImg {
+  width: 32px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.featureTitle {
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.featureDesc {
+  font-size: 13px;
+  color: var(--cream-muted);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .featureItem {
+    width: 30%;
+  }
+}
