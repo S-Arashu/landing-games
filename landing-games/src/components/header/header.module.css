@@ -1,0 +1,132 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 15, 7, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headerNav {
+  display: none;
+}
+
+.headerLogo {
+  max-width: 230px;
+}
+
+.headerBadge {
+  white-space: pre;
+}
+
+.btnOutline,
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 10px 22px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btnOutline {
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+}
+
+.btnPrimary {
+  background: var(--red-btn);
+  color: white;
+  border: 1.5px solid transparent;
+  box-shadow: 0 0 18px rgba(200, 64, 16, 0.35);
+}
+
+.headerBurger {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  background-color: #070f07a1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 101;
+}
+
+.burgerModal {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 20%;
+  background-color: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .headerBurger:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 15px rgba(255, 183, 1, 0.926));
+  }
+
+  .btnOutline:hover {
+    background: rgba(212, 160, 23, 0.12);
+    border-color: var(--gold-bright);
+    color: var(--gold-bright);
+    transform: translateY(-1px);
+  }
+
+  .btnPrimary:hover {
+    background: var(--red-hover);
+    box-shadow: 0 0 28px rgba(200, 64, 16, 0.55);
+    transform: translateY(-1px);
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    gap: 6%;
+  }
+
+  .headerBurger {
+    display: none;
+  }
+
+  .headerNav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerNav {
+    justify-content: flex-end;
+    gap: 5%;
+  }
+
+  .headerLogo {
+    max-width: fit-content;
+  }
+}

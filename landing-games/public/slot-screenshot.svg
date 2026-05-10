@@ -1,0 +1,87 @@
+<svg viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg" width="380" height="260">
+  <!-- Background -->
+  <rect width="380" height="260" rx="12" fill="#0d1f0d" stroke="#d4a017" stroke-width="2"/>
+  <!-- Game title bar -->
+  <rect width="380" height="40" rx="12" fill="#1a3a1a"/>
+  <rect x="0" y="28" width="380" height="12" fill="#1a3a1a"/>
+  <text x="190" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#f0c040" letter-spacing="2">ТОТАЛЬНЫЙ ЛЕС</text>
+  <text x="190" y="36" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#8fbc8f" letter-spacing="3">FOREST SPIRITS SLOT</text>
+
+  <!-- Reel area background -->
+  <rect x="20" y="55" width="340" height="130" rx="8" fill="#0a140a" stroke="#2d5a2d" stroke-width="1.5"/>
+
+  <!-- Reel dividers -->
+  <line x1="133" y1="55" x2="133" y2="185" stroke="#2d5a2d" stroke-width="1"/>
+  <line x1="247" y1="55" x2="247" y2="185" stroke="#2d5a2d" stroke-width="1"/>
+
+  <!-- Win line indicator -->
+  <line x1="20" y1="120" x2="360" y2="120" stroke="#f0c040" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+
+  <!-- Reel 1 symbols -->
+  <!-- Top: Totoro -->
+  <circle cx="77" cy="78" r="18" fill="#1a3a1a" stroke="#3d7040" stroke-width="1"/>
+  <ellipse cx="77" cy="75" rx="12" ry="10" fill="#3a7a3a"/>
+  <circle cx="73" cy="71" r="2.5" fill="#f0c040"/>
+  <circle cx="81" cy="71" r="2.5" fill="#f0c040"/>
+  <circle cx="73.5" cy="71" r="1.2" fill="#0a0a0a"/>
+  <circle cx="81.5" cy="71" r="1.2" fill="#0a0a0a"/>
+  <ellipse cx="74" cy="79" rx="2" ry="1" fill="#f5e8c8" opacity="0.7"/>
+  <ellipse cx="80" cy="79" rx="2" ry="1" fill="#f5e8c8" opacity="0.7"/>
+  <!-- Middle: WINNING SYMBOL - highlighted -->
+  <rect x="48" y="103" width="58" height="34" rx="5" fill="#1a3a0a" stroke="#f0c040" stroke-width="2"/>
+  <text x="77" y="117" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#f0c040">🌳</text>
+  <text x="77" y="133" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#f0c040">ДЖЕКПОТ</text>
+  <!-- Bottom: Coin -->
+  <circle cx="77" cy="162" r="18" fill="#1a2e1a" stroke="#3d7040" stroke-width="1"/>
+  <circle cx="77" cy="162" r="12" fill="none" stroke="#d4a017" stroke-width="2"/>
+  <text x="77" y="167" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#d4a017">¥</text>
+
+  <!-- Reel 2 symbols -->
+  <!-- Top: Spirit -->
+  <circle cx="190" cy="78" r="18" fill="#1a2e3a" stroke="#2d5a7a" stroke-width="1"/>
+  <ellipse cx="190" cy="76" rx="10" ry="12" fill="#f5e8c8"/>
+  <ellipse cx="190" cy="73" rx="7" ry="5" fill="#2a2a2a"/>
+  <circle cx="186" cy="71" r="2" fill="white"/>
+  <circle cx="194" cy="71" r="2" fill="white"/>
+  <path d="M 186 79 Q 190 82 194 79" stroke="#888" stroke-width="1" fill="none"/>
+  <!-- Middle: WINNING SYMBOL highlighted -->
+  <rect x="161" y="103" width="58" height="34" rx="5" fill="#1a3a0a" stroke="#f0c040" stroke-width="2"/>
+  <text x="190" y="117" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#f0c040">🌳</text>
+  <text x="190" y="133" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#f0c040">ДЖЕКПОТ</text>
+  <!-- Bottom: Soot sprite -->
+  <circle cx="190" cy="162" r="18" fill="#1a1a1a" stroke="#3d3d3d" stroke-width="1"/>
+  <circle cx="190" cy="162" r="12" fill="#0a0a0a"/>
+  <circle cx="186" cy="159" r="2.5" fill="white"/>
+  <circle cx="194" cy="159" r="2.5" fill="white"/>
+
+  <!-- Reel 3 symbols -->
+  <!-- Top: Calcifer flame -->
+  <circle cx="303" cy="78" r="18" fill="#3a1a0a" stroke="#7a3d0a" stroke-width="1"/>
+  <path d="M 303 95 Q 292 82 295 70 Q 298 60 303 65 Q 308 60 311 70 Q 314 82 303 95" fill="#f04020"/>
+  <path d="M 303 90 Q 296 80 299 72 Q 301 67 303 70 Q 305 67 307 72 Q 310 80 303 90" fill="#f0a020"/>
+  <circle cx="300" cy="74" r="2" fill="#0a0a0a"/>
+  <circle cx="306" cy="74" r="2" fill="#0a0a0a"/>
+  <!-- Middle: WINNING SYMBOL highlighted -->
+  <rect x="274" y="103" width="58" height="34" rx="5" fill="#1a3a0a" stroke="#f0c040" stroke-width="2"/>
+  <text x="303" y="117" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#f0c040">🌳</text>
+  <text x="303" y="133" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#f0c040">ДЖЕКПОТ</text>
+  <!-- Bottom: Acorn -->
+  <circle cx="303" cy="162" r="18" fill="#2a1a0a" stroke="#5a3a0a" stroke-width="1"/>
+  <ellipse cx="303" cy="165" rx="8" ry="10" fill="#8b4513"/>
+  <ellipse cx="303" cy="155" rx="10" ry="5" fill="#5a3a0a"/>
+  <line x1="303" y1="150" x2="303" y2="146" stroke="#3a2010" stroke-width="2"/>
+
+  <!-- Win message -->
+  <rect x="20" y="192" width="340" height="30" rx="6" fill="#1a3a0a" stroke="#f0c040" stroke-width="1.5"/>
+  <text x="190" y="212" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#f0c040">🏆 ЛЕС СОГЛАСЕН ДАТь ДЕНЬГИ! +2500 ¥</text>
+
+  <!-- Bottom controls -->
+  <rect x="20" y="228" width="100" height="22" rx="5" fill="#1a3a1a" stroke="#2d7040" stroke-width="1"/>
+  <text x="70" y="243" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#8fbc8f">СТАВКА: 50 ¥</text>
+
+  <rect x="140" y="228" width="100" height="22" rx="5" fill="#c04010" stroke="#f04020" stroke-width="1"/>
+  <text x="190" y="243" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="700" fill="white">КРУТИТЬ!</text>
+
+  <rect x="260" y="228" width="100" height="22" rx="5" fill="#1a3a1a" stroke="#2d7040" stroke-width="1"/>
+  <text x="310" y="243" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#f0c040">БАЛАНС: 8400 ¥</text>
+</svg>

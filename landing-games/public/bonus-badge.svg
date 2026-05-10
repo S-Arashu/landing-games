@@ -1,0 +1,49 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+  <defs>
+    <radialGradient id="badgeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c040" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f0c040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Outer glow -->
+  <circle cx="150" cy="150" r="140" fill="url(#badgeGlow)"/>
+  <!-- Outer ring -->
+  <circle cx="150" cy="150" r="130" fill="none" stroke="#d4a017" stroke-width="3"/>
+  <!-- Star points decoration -->
+  <polygon points="150,15 158,55 195,42 177,77 215,85 185,110 205,145 165,140 155,180 135,143 95,148 115,113 85,88 123,82 105,47 142,60" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.6"/>
+  <!-- Inner circle -->
+  <circle cx="150" cy="150" r="105" fill="#0d1f0d" stroke="#2d7040" stroke-width="2"/>
+  <!-- Inner decorative ring -->
+  <circle cx="150" cy="150" r="95" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.5" stroke-dasharray="8,5"/>
+
+  <!-- Tree at top -->
+  <rect x="146" y="90" width="8" height="35" fill="#5cb85c"/>
+  <ellipse cx="150" cy="82" rx="22" ry="18" fill="#2d7040"/>
+  <ellipse cx="150" cy="68" rx="16" ry="14" fill="#3d9050"/>
+  <ellipse cx="150" cy="57" rx="11" ry="10" fill="#4faa5f"/>
+  <!-- Tree eyes -->
+  <circle cx="145" cy="78" r="2.5" fill="#f0c040"/>
+  <circle cx="155" cy="78" r="2.5" fill="#f0c040"/>
+  <circle cx="145.5" cy="78" r="1.2" fill="#0a0a0a"/>
+  <circle cx="155.5" cy="78" r="1.2" fill="#0a0a0a"/>
+
+  <!-- БОНУС text -->
+  <text x="150" y="148" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="700" fill="#f0c040" letter-spacing="3">БОНУС</text>
+
+  <!-- 200% text -->
+  <text x="150" y="188" text-anchor="middle" font-family="Georgia,serif" font-size="44" font-weight="700" fill="white">200%</text>
+
+  <!-- Sub text -->
+  <text x="150" y="210" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#8fbc8f" letter-spacing="2">НА ПЕРВЫЙ ДЕПОЗИТ</text>
+
+  <!-- Decorative bottom -->
+  <text x="150" y="234" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#d4a017" letter-spacing="1">✦ ТОТОРО ОДОБРЯЕТ ✦</text>
+
+  <!-- Corner fireflies -->
+  <circle cx="80" cy="150" r="4" fill="#f0c040" opacity="0.8"/>
+  <circle cx="80" cy="150" r="8" fill="#f0c040" opacity="0.2"/>
+  <circle cx="220" cy="150" r="4" fill="#f0c040" opacity="0.8"/>
+  <circle cx="220" cy="150" r="8" fill="#f0c040" opacity="0.2"/>
+  <circle cx="150" cy="248" r="3" fill="#f0c040" opacity="0.7"/>
+  <circle cx="150" cy="248" r="6" fill="#f0c040" opacity="0.15"/>
+</svg>
