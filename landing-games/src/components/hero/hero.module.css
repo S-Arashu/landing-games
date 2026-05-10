@@ -1,0 +1,239 @@
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding-top: 10%;
+}
+
+.heroImg {
+  display: block;
+  padding-bottom: 10%;
+  position: relative;
+  animation: heroFloat 6s ease-in-out infinite;
+  width: 100%;
+  height: 30vh;
+  max-height: 440px;
+  object-fit: contain;
+  filter: drop-shadow(0px 0px 15px rgba(255, 183, 1, 0.926));
+}
+
+.heroPromo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promoWelcome {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.promoTitle {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--cream);
+  margin-bottom: 18px;
+}
+
+.promoTitlePart {
+  color: var(--gold-bright);
+  font-style: normal;
+}
+
+.promoDescription {
+  font-size: 17px;
+  color: var(--cream-muted);
+  font-style: italic;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.promoNote {
+  font-size: 13px;
+  color: var(--green-soft);
+  margin-bottom: 32px;
+}
+
+.promoBlock {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.promoBlock::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at top left,
+    rgba(212, 160, 23, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.promoLabel {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green-soft);
+  margin-bottom: 6px;
+}
+
+.promoOffer {
+  font-family: "Cinzel", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.promoOfferSub {
+  font-size: 14px;
+  color: var(--cream-muted);
+  margin-bottom: 18px;
+}
+
+.promoCodeRow {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.promoCodeDisplay {
+  flex: 1;
+  background: var(--bg-deep);
+  border: 1.5px solid var(--gold);
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  letter-spacing: 4px;
+  cursor: pointer;
+  user-select: all;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promoFine {
+  font-size: 11px;
+  color: var(--green-soft);
+  margin-top: 12px;
+  opacity: 0.7;
+}
+
+.heroCta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trustBadges {
+  display: flex;
+  gap: 20px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.badgeItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.badgeIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.badgeText {
+  font-size: 12px;
+  color: var(--cream-muted);
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--bg-card);
+  border: 1px solid var(--gold);
+  color: var(--gold-bright);
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 12px 28px;
+  border-radius: 40px;
+  z-index: 999;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  width: 300px;
+  text-align: center;
+}
+
+.show {
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .promoCodeDisplay:hover {
+    background: rgba(240, 192, 64, 0.07);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .heroPromo {
+    width: 50%;
+  }
+
+  .promoBlock {
+    background-color: #1e3820ad;
+  }
+
+  .promoCodeRow {
+    flex-direction: row;
+  }
+
+  .heroImg {
+    height: 50vh;
+    width: 50%;
+    z-index: -1;
+    align-self: center;
+    padding: 0;
+  }
+}

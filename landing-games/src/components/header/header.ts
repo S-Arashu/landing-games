@@ -5,17 +5,17 @@ import styles from "./header.module.css";
 export function Header() {
   const container = createElement("div", {
     parent: document.body,
-    style: "container",
+    style: ["container"],
   });
 
   const header = createElement("header", {
     parent: container,
-    style: styles.header,
+    style: [styles.header],
   });
 
-  const logo = createElement("img", {
+  createElement("img", {
     parent: header,
-    style: styles.headerLogo,
+    style: [styles.headerLogo],
     attr: {
       src: "/logo-games.png",
       alt: "Logo",
@@ -24,28 +24,30 @@ export function Header() {
 
   const headerNav = createElement("nav", {
     parent: header,
-    style: styles.headerNav,
+    style: [styles.headerNav],
   });
 
   const headerBadge = createElement("span", {
     parent: headerNav,
-    style: styles.headerBadge,
+    style: [styles.headerBadge],
     text: `🌙   Лес открыт 24/7`,
   });
 
-  const btnLogIn = createButton("Войти", openModalLogIn, styles.btnOutline);
-  headerNav.append(btnLogIn);
+  const btnLogIn = createButton("Войти", {
+    parent: headerNav,
+    func: openModalLogIn,
+    style: ["btn", "btnOutline"],
+  });
 
-  const btnRegistration = createButton(
-    "Регистрация",
-    openModalRegistration,
-    styles.btnPrimary,
-  );
-  headerNav.append(btnRegistration);
+  const btnRegistration = createButton("Регистрация", {
+    parent: headerNav,
+    func: openModalRegistration,
+    style: ["btn", "btnPrimary"],
+  });
 
   const burger = createElement("img", {
     parent: header,
-    style: styles.headerBurger,
+    style: [styles.headerBurger],
     attr: {
       src: "/totoro-assistant.png",
       alt: "Меню",
@@ -57,12 +59,12 @@ export function Header() {
 
     const overlay = createElement("div", {
       parent: document.body,
-      style: styles.overlay,
+      style: [styles.overlay],
     });
 
     const burgerModal = createElement("div", {
       parent: overlay,
-      style: styles.burgerModal,
+      style: [styles.burgerModal],
     });
 
     burgerModal.append(headerBadge);

@@ -1,9 +1,14 @@
-type InsertMethod = "append" | "prepend" | "before" | "after" | "replaceWith";
+export type InsertMethod =
+  | "append"
+  | "prepend"
+  | "before"
+  | "after"
+  | "replaceWith";
 
 interface ElementOptions {
   parent?: HTMLElement;
   insertMethod?: InsertMethod;
-  style?: string;
+  style?: string[];
   attr?: Record<string, string>;
   text?: string;
 }
@@ -19,7 +24,12 @@ export function createElement<T extends keyof HTMLElementTagNameMap>(
       el.setAttribute(key, value);
     });
   }
-  if (style) el.classList.add(style);
+
+  if (style) {
+    style.forEach((elem) => {
+      el.classList.add(elem);
+    });
+  }
 
   if (text) el.innerText = text;
 
