@@ -106,7 +106,7 @@ export function About() {
   });
 
   createElement("div", {
-    parent: aboutLayout,
+    parent: container,
     style: [styles.ornamentDivider],
     text: `✦ ${NBSP}${NBSP} ✦ ${NBSP}${NBSP} ✦ ${NBSP}${NBSP} ✦ ${NBSP}${NBSP} ✦`,
   });

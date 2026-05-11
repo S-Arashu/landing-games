@@ -10,6 +10,10 @@
   gap: 15px;
 }
 
+.aboutDesc {
+  text-align: center;
+}
+
 .sectionEyebrow {
   font-size: 11px;
   letter-spacing: 4px;
@@ -37,6 +41,7 @@
   color: var(--cream-muted);
   line-height: 1.8;
   max-width: 680px;
+  margin: auto;
 }
 
 .prose p {
@@ -105,7 +110,6 @@
 
 @media (min-width: 1024px) {
   .aboutLayout {
-    flex-direction: row;
     align-items: center;
   }
 }

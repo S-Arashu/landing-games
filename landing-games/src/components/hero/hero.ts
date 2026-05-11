@@ -26,7 +26,7 @@ export function Hero() {
     style: [styles.heroImg],
     attr: {
       alt: "Казино духов в мистическом лесу",
-      loading: "eager",
+      loading: "lazy",
       src: "/hero-polaroid.png",
     },
   });
@@ -121,6 +121,7 @@ export function Hero() {
   createButton("Узнать больше", {
     parent: heroCta,
     style: ["btn", "btnOutline"],
+    type: "a",
     attr: {
       href: "#about",
     },
