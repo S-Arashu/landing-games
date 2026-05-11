@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/", // заменить на '/my-repo/' если деплой будет на GitHub Pages
+  base: "/landing-games", // просто слеш заменить на '/my-repo/' если деплой будет на GitHub Pages
   build: {
     outDir: "dist",
     sourcemap: false,
