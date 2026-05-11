@@ -11,13 +11,21 @@ interface ElementOptions {
   style?: string[];
   attr?: Record<string, string>;
   text?: string;
+  innerHTML?: boolean;
 }
 
 export function createElement<T extends keyof HTMLElementTagNameMap>(
   type: T,
   options: ElementOptions = {},
 ): HTMLElementTagNameMap[T] {
-  const { parent, insertMethod = "append", style, attr, text } = options;
+  const {
+    parent,
+    insertMethod = "append",
+    style,
+    attr,
+    text,
+    innerHTML = false,
+  } = options;
   const el = document.createElement(type);
   if (attr) {
     Object.entries(attr).forEach(([key, value]) => {
@@ -31,7 +39,13 @@ export function createElement<T extends keyof HTMLElementTagNameMap>(
     });
   }
 
-  if (text) el.innerText = text;
+  if (text) {
+    if (innerHTML) {
+      el.innerHTML = text;
+    } else {
+      el.innerText = text;
+    }
+  }
 
   if (parent) parent[insertMethod](el);
 

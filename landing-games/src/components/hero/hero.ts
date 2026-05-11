@@ -34,16 +34,11 @@ export function Hero() {
     text: "✦ Добро пожаловать туда, откуда не возвращаются без выигрыша ✦",
   });
 
-  const title = createElement("h1", {
+  createElement("h1", {
     parent: promoSection,
     style: [styles.promoTitle],
-    text: "Казино, которое ",
-  });
-
-  createElement("em", {
-    parent: title,
-    style: [styles.promoTitlePart],
-    text: "одобрил Тоторо",
+    innerHTML: true,
+    text: "Казино, которое<br><em>одобрил Тоторо</em>",
   });
 
   createElement("p", {
