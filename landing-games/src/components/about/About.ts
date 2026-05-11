@@ -25,30 +25,18 @@ export function About() {
     style: [styles.aboutDesc],
   });
 
-  const sectionEyebrow = createElement("p", {
+  createElement("p", {
     parent: aboutDesc,
     style: [styles.sectionEyebrow],
     text: "О казино",
   });
 
-  const sectionTitle = createElement("h2", {
+  createElement("h2", {
     parent: aboutDesc,
     style: [styles.sectionTitle],
     innerHTML: true,
     text: "Место, где <em>магия встречает</em> большие выигрыши",
   });
-
-  // const sectionTitleEm = createElement("em", {
-  //   parent: sectionTitle,
-  //   style: [styles.sectionTitleEm],
-  //   text: "магия встречает",
-  // });
-
-  // const sectionTitleNext = createElement("h2", {
-  //   parent: sectionTitle,
-  //   style: [styles.sectionTitle],
-  //   text: " большие выигрыши",
-  // });
 
   const prose = createElement("div", {
     parent: aboutDesc,
@@ -63,7 +51,7 @@ export function About() {
   ];
 
   for (let i = 0; i < content.length; i += 1) {
-    const paragraph = createElement("p", {
+    createElement("p", {
       parent: prose,
       innerHTML: true,
       text: content[i],
@@ -111,13 +99,13 @@ export function About() {
     });
   });
 
-  const sectionNote = createElement("p", {
+  createElement("p", {
     parent: aboutTable,
     style: [styles.sectionNote],
     text: "* Вейджер ×30. Тоторо перечитал условия. Всё честно.",
   });
 
-  const ornamentDivider = createElement("div", {
+  createElement("div", {
     parent: aboutLayout,
     style: [styles.ornamentDivider],
     text: `✦ ${NBSP}${NBSP} ✦ ${NBSP}${NBSP} ✦ ${NBSP}${NBSP} ✦ ${NBSP}${NBSP} ✦`,

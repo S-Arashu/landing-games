@@ -97,7 +97,7 @@ body {
     transform: translateY(-1px);
   }
 
-  .btn-gold:hover {
+  .btnGold:hover {
     background: var(--gold-bright);
     box-shadow: 0 0 22px rgba(240, 192, 64, 0.5);
     transform: translateY(-2px);

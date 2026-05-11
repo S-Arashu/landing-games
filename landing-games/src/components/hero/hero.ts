@@ -11,6 +11,9 @@ export function Hero() {
   const heroSection = createElement("section", {
     parent: container,
     style: [styles.hero],
+    attr: {
+      id: "offer",
+    },
   });
 
   const promoSection = createElement("div", {

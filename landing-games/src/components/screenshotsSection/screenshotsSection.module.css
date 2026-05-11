@@ -1,0 +1,108 @@
+.sectionDesc {
+  font-size: 15px;
+  color: var(--cream-muted);
+  font-style: italic;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.screenshotGames {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0;
+  gap: 30px;
+}
+
+.screenshotGamesImg,
+.screenshotCardRouletteImg,
+.bonusBadgeWrapImg {
+  width: 100%;
+}
+
+.screenshotTitle {
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+
+.screenshotCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.screenshotRtp {
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.bonusCtaBlock {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 36px;
+  flex-direction: column;
+}
+
+.bonusCtaTextTitle {
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  color: var(--gold-bright);
+  margin-bottom: 6px;
+}
+
+.bonusCtaTextDesc {
+  font-size: 14px;
+  color: var(--cream-muted);
+  font-style: italic;
+}
+
+.screenshotInfo {
+  padding: 3%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .screenshotCard:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(212, 160, 23, 0.15);
+  }
+}
+
+@media (min-width: 480px) {
+  .bonusCtaTextTitle,
+  .bonusCtaTextDesc {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .screenshotsHeader {
+    text-align: center;
+  }
+
+  .screenshotGames .screenshotCard {
+    width: 52%;
+  }
+
+  .screenshotCard:nth-last-child(2) {
+    width: 44%;
+  }
+
+  .screenshotGames,
+  .bonusCtaBlock {
+    flex-direction: row;
+  }
+
+  .bonusCtaBlock {
+    margin-bottom: 10%;
+  }
+}
